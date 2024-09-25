@@ -1,0 +1,229 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="styleEtudiant.css"> 
+    <title>Listes des étudiants </title> 
+    <link rel="icon" href="Images/lister.png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head> 
+
+<body> 
+
+    <h1 class="heading">Les Listes Des Etudiants</h1> 
+
+    <div class="container"> 
+        <form action="listeE.html" method="post">     
+             <select onchange="handleSelection(event)"> 
+           
+                <option value="#" >Entrer Votre Niveau </option> 
+                    <option value="#section1">Licence 1</option>     
+                    <option value="#section2">Licence 2</option> 
+                    <option value="#section3">Licence 3</option> 
+                     <option value="#section4">Master 1</option>  
+                     <option value="#section5">Master 2</option> 
+           
+             </select> 
+
+                
+
+        </form> 
+    </div> 
+
+    
+
+   <div class="table"> 
+  <div class="table_body"> 
+    <table> 
+        <thead class="table_header"> 
+            <tr> 
+                <th>Niveau</th> 
+                <th>Annee </th> 
+                <th> Section </th> 
+                <th> La liste  </th> 
+                <th> Téléchargement   </th> 
+
+            </tr> 
+
+        </thead> 
+        <tbody> 
+        <tr>
+            <td rowspan="9"> Licence</td> 
+            <td rowspan="4" id="section1">1<sup>ére</sup></td> 
+            <td>A</td> 
+            <td> <a href="PDF/L1-info-3.pdf"  target="_blank" >L1-info-A</a></td> 
+            <td><a href="PDF/L1-info-3.pdf"  target="_blank" download> <i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+        </tr> 
+
+        <tr> 
+
+            <td>B</td> 
+            <td> <a href="PDF/L1-info-3.pdf"  target="_blank" >L1-info-B</a></td> 
+            <td><a href="PDF/L1-info-3.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+        <tr> 
+
+            <td>C</td> 
+            <td> <a href="PDF/L1-info-3.pdf"  target="_blank" >L1-info-C</a></td> 
+            <td><a href="PDF/L1-info-3.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+        <tr> 
+
+            <td>D</td> 
+            <td> <a href="PDF/L1-info-3.pdf"  target="_blank" >L1-info-D</a></td> 
+            <td><a href="PDF/L1-info-3.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+       <tr> 
+
+             <td rowspan="3" id="section2">2<sup>éme</sup></td> 
+             <td>A</td> 
+             <td> <a href="PDF/L2-info.pdf"  target="_blank" >L2-info-A</a></td> 
+             <td><a href="PDF/L2-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        <tr> 
+
+            <td>B</td> 
+            <td> <a href="PDF/L2-info.pdf"  target="_blank" >L2-info-B</a></td> 
+            <td><a href="PDF/L2-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        <tr> 
+
+            <td>C</td> 
+            <td> <a href="PDF/L2-info.pdf"  target="_blank" >L2-info-B</a></td>
+            <td><a href="PDF/L2-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+        <tr> 
+
+            <td rowspan="2" id="section3">3<sup>éme</sup></td> 
+            <td> SI</td> 
+            <td> <a href="PDF/L3-SI-3-1.pdf"  target="_blank" >L3-info-SI</a></td> 
+            <td><a href="PDF/L3-SI-3-1.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+        <tr> 
+
+            <td> ISIL</td> 
+            <td> <a href="PDF/L3-ISIL.pdf-2-1.pdf"  target="_blank" >L3-info-ISIL</a></td> 
+            <td><a href="PDF/L3-ISIL.pdf-2-1.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        <tr> 
+
+        <td rowspan="6">Master</td> 
+
+            <td rowspan="3" id="section4">1  <sup>ére</sup></td> 
+            <td>RÉSEAU</td> 
+            <td> <a href="PDF/M1-info.pdf"  target="_blank" >M1-info-RESEAU</a></td> 
+            <td><a href="PDF/M1-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+     
+
+        <tr>  
+
+             <td>ASD</td> 
+             <td> <a href="PDF/M1-info.pdf"  target="_blank" >M1-info-ASD</a></td> 
+             <td><a href="PDF/M1-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i> Télécharger</a></td> 
+
+        </tr> 
+
+        <tr>   
+
+            <td>ISIL</td> 
+            <td> <a href="PDF/M1-info.pdf"  target="_blank" >M1-info-ISIL</a></td> 
+            <td><a href="PDF/M1-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+ 
+
+        <tr> 
+
+            <td rowspan="3" id="section5">2<sup> éme</sup> </td> 
+            <td>RÉSEAU</td> 
+            <td> <a href="PDF/M1-info.pdf"  target="_blank" >M2-info-RESEAU</a></td> 
+            <td><a href="PDF/M1-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+     
+
+        <tr>  
+
+             <td>ASD</td> 
+             <td> <a href="PDF/M1-info.pdf"  target="_blank" >M2-info-ASD</a></td> 
+             <td><a href="PDF/M1-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+        <tr>  
+
+             <td>ISIL</td> 
+             <td> <a href="PDF/M1-info.pdf"  target="_blank" >M2-info-ISIL</a></td> 
+             <td><a href="PDF/M1-info.pdf"  target="_blank" download><i class="fa-solid fa-file-arrow-down"></i>  Télécharger</a></td> 
+
+        </tr> 
+
+        </tbody> 
+
+      
+
+    </table> 
+
+   </div> 
+
+</div> 
+<div class="button">
+    <a  href="index.html"><i class="fa-solid fa-house"></i> Revenez à la page d'accueil..</a>
+</div>
+
+
+<script>
+    function handleSelection(event) {
+        // Obtenir toutes les options
+        const allOptions = document.querySelectorAll('select option');
+
+        // Supprimer la classe 'selected-option' de toutes les options
+        allOptions.forEach(option => {
+            option.classList.remove('selected-option');
+        });
+
+        // Obtenir la valeur sélectionnée
+        const selectedOption = event.target.value;
+
+        // Si une valeur est sélectionnée (différente de "")
+        if (selectedOption) {
+            // Rediriger l'utilisateur vers la partie spécifique de la page
+            window.location.hash = selectedOption;
+
+            // Ajouter une classe à l'option sélectionnée pour appliquer l'ombre portée
+            const selectedOptionElement = document.querySelector(`select option[value="${selectedOption}"]`);
+            selectedOptionElement.classList.add('selected-option');
+        }
+    }
+</script>
+
+    
+
+</body> 
+
+</html> 

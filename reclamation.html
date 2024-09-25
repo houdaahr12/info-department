@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Reclamation</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styleReclamation.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"> 
+    <link rel="icon" href="Images/fichier.png">
+
+
+</head>
+
+<body>
+    <h1> Reclamation</h1>
+    <p>Afin de régler votre problème, veuillez remplir le formulaire ci-dessous :</p>
+    <div class="comment-box">
+
+
+
+        <form class="comment-form">
+
+            <i class='bx bxs-user'></i><input type="text" name="Nom" placeholder="Votre Nom ..."> 
+
+            <i class='bx bxs-user'></i><input type="text" name="Prenom" placeholder="Votre Prenom ..."> 
+
+            <i class='bx bxs-phone'></i><input type="tel" placeholder="Votre numero de tel ... "> 
+
+            <i class='bx bxs-envelope'></i><input type="email" placeholder="Votre email ..."> 
+            
+            <i class='bx bxs-edit'></i><textarea rows="10" placeholder="Expliquer votre probleme ..." ></textarea> 
+               
+
+            <button type="submit" class="btn" onclick="messag()"> Enregistrer</button>
+
+
+        </form>
+
+    </div>
+    <div class="button">
+        <a href="index.html"><i class="fa-solid fa-house" style="color: black;"></i> Revenez à la page d'accueil..</a>
+    </div>
+
+
+    <script>
+        function messag(){
+            alert("Votre message a été bien envoyé!");
+        }
+    </script>
+</body>
+
+</html>
